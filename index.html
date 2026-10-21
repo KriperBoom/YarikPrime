@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YarikPrime — Minecraft сервер</title>
+  <style>
+    :root {
+      --dark-pink: #8B4567;
+      --accent: #D84585;
+      --bg-dark: #1a0f15;
+      --text-main: #f0e6e8;
+      --text-muted: #a89fa0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--accent);
+      position: relative;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background: rgba(255,255,255,0.05);
+      padding: 1.5rem;
+      border: 1px solid rgba(216,69,133,0.2);
+      border-radius: 8px;
+    }
+
+    .feature-card h3 {
+      margin-bottom: 0.75rem;
+      color: var(--accent);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(216, 69, 133, 0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: var(--text-muted);
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>YarikPrime</h1>
+    <p class="subtitle">Твой дом в мире Minecraft</p>
+    <nav>
+      <ul>
+        <li><a href="#about">О сервере</a></li>
+        <li><a href="#features">Особенности</a></li>
+        <li><a href="#join">Как зайти</a></li>
+        <li><a href="#rules">Правила</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2 class="section-title">О сервере YarikPrime</h2>
+      <p style="text-align:center;">
+        YarikPrime — уютное сообщество для игроков всех уровней. Здесь ты найдёшь выживание, мини-игры и регулярные ивенты. Присоединяйся и стань частью нашей истории!
+      </p>
+    </section>
+
+    <section id="features">
+      <h2 class="section-title">Что у нас есть</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Выживание</h3>
+          <p>Классический Survival с оптимизированными мирами и защитой от лагов.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Мини-игры</h3>
+          <p>Паркур, BedWars, SkyWars и другие режимы для весёлого времяпровождения.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Ивенты</h3>
+          <p>Каждую неделю — тематические события и награды для всех участников.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Дружное комьюнити</h3>
+          <p>Модерация, Discord-сервер и поддержка новичков.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="join">
+      <h2 class="section-title">Как присоединиться</h2>
+      <div class="feature-card" style="max-width:600px; margin:0 auto;">
+        <h3>IP сервера</h3>
+        <p style="font-family:monospace; font-size:1.2rem; color:var(--accent);">
+          yarikprime.aternose.me
+        </p>
+        <p>Версия: 1.21.11</p>
+        <a href="#" class="btn">Подключиться</a>
+      </div>
+    </section>
+
+    <section id="rules">
+      <h2 class="section-title">Правила сервера</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <p>1. Уважай других игроков и администрацию.</p>
+          <p>2. Запрещены читы и любые модификации, дающие преимущество.</p>
+        </div>
+        <div class="feature-card">
+          <p>3. Не спамь в чате и не провоцируй конфликты.</p>
+          <p>4. Строительство — только в разрешённых зонах.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 YarikPrime. Все права защищены.</p>
+    <p>Сервер не аффилирован с Mojang AB или Microsoft.</p>
+  </footer>
+</body>
+</html>
