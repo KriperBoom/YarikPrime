@@ -71,12 +71,6 @@
       position: relative;
     }
 
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-    }
-
     .feature-card {
       background: rgba(255,255,255,0.05);
       padding: 1.5rem;
@@ -106,6 +100,16 @@
       box-shadow: 0 4px 12px rgba(216, 69, 133, 0.4);
     }
 
+    .btn-discord {
+      background: #5865F2; /* цвет Discord */
+      color: white;
+    }
+
+    .btn-discord:hover {
+      box-shadow: 0 4px 12px rgba(88, 101, 242, 0.4);
+      transform: translateY(-2px);
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -122,7 +126,7 @@
     <nav>
       <ul>
         <li><a href="#about">О сервере</a></li>
-        <li><a href="#features">Особенности</a></li>
+        <li><a href="#survival">Выживание</a></li>
         <li><a href="#join">Как зайти</a></li>
         <li><a href="#rules">Правила</a></li>
       </ul>
@@ -133,29 +137,19 @@
     <section id="about">
       <h2 class="section-title">О сервере YarikPrime</h2>
       <p style="text-align:center;">
-        YarikPrime — уютное сообщество для игроков всех уровней. Здесь ты найдёшь выживание, мини-игры и регулярные ивенты. Присоединяйся и стань частью нашей истории!
+        YarikPrime — уютное сообщество для игроков всех уровней. Основной режим — выживание с оптимизированными мирами и защитой от лагов. Присоединяйся и стань частью нашей истории!
       </p>
     </section>
 
-    <section id="features">
-      <h2 class="section-title">Что у нас есть</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <h3>Выживание</h3>
-          <p>Классический Survival с оптимизированными мирами и защитой от лагов.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Мини-игры</h3>
-          <p>Паркур, BedWars, SkyWars и другие режимы для весёлого времяпровождения.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Ивенты</h3>
-          <p>Каждую неделю — тематические события и награды для всех участников.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Дружное комьюнити</h3>
-          <p>Модерация, Discord-сервер и поддержка новичков.</p>
-        </div>
+    <section id="survival">
+      <h2 class="section-title">Выживание на YarikPrime</h2>
+      <div class="feature-card">
+        <h3>Классический Survival</h3>
+        <p>Оптимизированные миры, стабильная производительность и продуманная экономика. Никаких лишних мини‑игр — только чистое выживание и развитие.</p>
+      </div>
+      <div class="feature-card" style="margin-top:1rem;">
+        <h3>Защита от лагов</h3>
+        <p>Мы следим за нагрузкой на сервер и регулярно обновляем ядро, чтобы играть было комфортно даже при большом онлайне.</p>
       </div>
     </section>
 
@@ -164,30 +158,32 @@
       <div class="feature-card" style="max-width:600px; margin:0 auto;">
         <h3>IP сервера</h3>
         <p style="font-family:monospace; font-size:1.2rem; color:var(--accent);">
-          yarikprime.aternose.me
+          play.yarikprime.net
         </p>
-        <p>Версия: 1.21.11</p>
+        <p>Версия: 1.20.x–1.21.x</p>
         <a href="#" class="btn">Подключиться</a>
+      </div>
+
+      <div style="margin-top:2rem; text-align:center;">
+        <a href="https://discord.com/channels/1549478797693423648" target="_blank" rel="noopener noreferrer" class="btn btn-discord">
+          Вступить в Discord
+        </a>
       </div>
     </section>
 
     <section id="rules">
       <h2 class="section-title">Правила сервера</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <p>1. Уважай других игроков и администрацию.</p>
-          <p>2. Запрещены читы и любые модификации, дающие преимущество.</p>
-        </div>
-        <div class="feature-card">
-          <p>3. Не спамь в чате и не провоцируй конфликты.</p>
-          <p>4. Строительство — только в разрешённых зонах.</p>
-        </div>
+      <div class="feature-card">
+        <p>1. Уважай других игроков и администрацию.</p>
+        <p>2. Запрещены читы и любые модификации, дающие преимущество.</p>
+        <p>3. Не спамь в чате и не провоцируй конфликты.</p>
+        <p>4. Строительство — только в разрешённых зонах.</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 YarikPrime. Все права защищены.</p>
+    <p>&copy; 2024 YarikPrime. Все права защищены.</p>
     <p>Сервер не аффилирован с Mojang AB или Microsoft.</p>
   </footer>
 </body>
